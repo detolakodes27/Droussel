@@ -1,0 +1,112 @@
+.ad{
+	background-image: url(/images/dr2.jpg);
+}
+.ad div{
+	margin:1%;
+	color:#fff;
+}
+.ad div:first-child{
+	font-weight:700;
+	font-size:18px;
+}
+.header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:0 2%;
+	flex-wrap: wrap;
+}
+.header > i{
+	display: none;
+}
+.header1{
+	display: flex;
+	/*flex:1;*/
+	/*background:red;*/
+	font-size:30px;
+	font-family:Quicksand, sans-serif;
+	font-style: italic;
+	font-weight:800;
+	color:#007bff;
+}
+.header2{
+	display: flex;
+	flex:4;
+	/*background:red;*/
+	justify-content: flex-start;
+	align-items: center;
+}
+.header2a{
+	flex:2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*background:red;*/
+}
+
+.header2a a{
+	color:#000;
+	font-size:14px;
+	font-weight:500;
+	margin:0 1%;
+}
+.header2b{
+	flex:1;
+	display: flex;
+	justify-content: flex-end;
+	align-items:center;
+	/*background: blue;*/
+}
+.header2b_mob{
+	justify-content: flex-start;
+}
+.header2b i{
+	font-size:14px;
+	color:#000;
+}
+
+.icon{
+	display: none;
+}
+.links{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mob-navbar{
+	position: fixed;
+	top:0;
+	right:0;
+	background:#000;
+	width:250px;
+	height:100vh;
+	/*display: flex;
+	justify-content: space-around;
+	align-items:center;
+	flex-direction: column;*/
+}
+
+@media screen and (max-width: 850px){
+	.header2{
+		display: none;
+	}
+	.icon{
+		display: flex;
+		justify-content: flex-end;
+		flex:1;
+		/*background:red;*/
+		align-items: center;
+	}
+	.closeicon{
+		display: flex;
+	}
+	/*.header1mob{
+		display: flex;
+		font-size:30px;
+		font-family:Quicksand, sans-serif;
+		font-style: italic;
+		font-weight:800;
+		color:#fff;
+	}*/
+}

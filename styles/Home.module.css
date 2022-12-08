@@ -1,0 +1,15 @@
+.header2 img{
+	width:100%;
+	border-radius:5px;
+}
+
+.header2 a{
+	font-size:11px;
+	cursor: pointer;
+	/*text-align: center;*/
+	font-weight: bold;
+	color:#000;
+}
+.header2 a:hover{
+	color:#01d923;
+}
