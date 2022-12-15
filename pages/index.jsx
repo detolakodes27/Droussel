@@ -20,17 +20,17 @@ const Home = ({articles, sarticles}) =>{
 			<div className='container-fluid px-5 mt-70'>
 				<SectionSubtitle subtitle='Breaking News' />
 				<div className='row justify-content-center'>
-					{
+// 					{
 
-				 		articles.map((article, index) => (
-				 			<div key={index} className={`${styles.header2} col-lg-3 col-md-6 col-sm-6 col-12 my-1`}>
-				 				<div className='shadow-sm card-hover rounded-sm flex-h-new3'>
-					 				{!!article.urlToImage && <img src={article.urlToImage}  />}
-					 				<a onClick={() => (window.location.href = article.url)} >{article.title}</a>
-				 				</div>
-				 			</div>
-				 		))
-			 		}
+// 				 		articles.map((article, index) => (
+// 				 			<div key={index} className={`${styles.header2} col-lg-3 col-md-6 col-sm-6 col-12 my-1`}>
+// 				 				<div className='shadow-sm card-hover rounded-sm flex-h-new3'>
+// 					 				{!!article.urlToImage && <img src={article.urlToImage}  />}
+// 					 				<a onClick={() => (window.location.href = article.url)} >{article.title}</a>
+// 				 				</div>
+// 				 			</div>
+// 				 		))
+// 			 		}
 				</div>
 			</div>
 			
@@ -40,26 +40,26 @@ const Home = ({articles, sarticles}) =>{
 	)
 }
 
-export const getServerSideProps = async pageContext =>{
+// export const getServerSideProps = async pageContext =>{
 
 
-	const apiResponse = await fetch(
-		`https://newsapi.org/v2/top-headlines?country=gb&pageSize=12&category=general`,
-		{
-			headers: {
-				Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
-			},
-		},
-	);
+// 	const apiResponse = await fetch(
+// 		`https://newsapi.org/v2/top-headlines?country=gb&pageSize=12&category=general`,
+// 		{
+// 			headers: {
+// 				Authorization: `Bearer ${process.env.NEXT_PUBLIC_NEWS_KEY}`,
+// 			},
+// 		},
+// 	);
 
-	const apiJson = await apiResponse.json();
-	const {articles} = apiJson;
+// 	const apiJson = await apiResponse.json();
+// 	const {articles} = apiJson;
 
-	return{
-		props: {
-			articles,
-		}
-	}
-};
+// 	return{
+// 		props: {
+// 			articles,
+// 		}
+// 	}
+// };
 
 export default Home
